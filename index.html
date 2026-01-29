@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>실전 AI 활용 올인원 마스터 클래스</title>
-  <meta name="description" content="9개 실전 프로젝트로 완성하는 AI 활용 능력. 영상 생성부터 자동화, Agent까지 난이도 순서로 학습">
+  <meta name="description" content="5개 핵심 파트와 62개 레슨으로 완성하는 AI 활용 능력. 영상 생성부터 자동화, Agent까지 난이도 순서로 학습">
   
   <!-- Open Graph -->
   <meta property="og:title" content="실전 AI 활용 올인원 마스터 클래스">
-  <meta property="og:description" content="9개 실전 프로젝트로 완성하는 AI 활용 능력">
+  <meta property="og:description" content="5개 핵심 파트와 62개 레슨으로 완성하는 AI 활용 능력">
   <meta property="og:type" content="website">
   
   <!-- Fonts -->
@@ -992,23 +992,23 @@
         <span>올인원 마스터 클래스</span>
       </h1>
       <p>
-        9개 실전 프로젝트로 완성하는 AI 활용 능력<br>
+        5개 핵심 파트 · 62개 레슨으로 완성하는 AI 활용 능력<br>
         영상 생성부터 자동화, Agent까지 난이도 순서로 학습
       </p>
 
       <div class="stats">
         <div class="stat">
-          <div class="stat-value">9</div>
+          <div class="stat-value" id="total-parts">5</div>
           <div class="stat-label">Parts</div>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <div class="stat-value" id="total-lessons">77</div>
+          <div class="stat-value" id="total-lessons">62</div>
           <div class="stat-label">Lessons</div>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <div class="stat-value">약 48시간</div>
+          <div class="stat-value">약 37시간</div>
           <div class="stat-label">학습시간</div>
         </div>
       </div>
@@ -1027,7 +1027,7 @@
         </div>
         <div class="progress-stats">
           <span><i data-lucide="check-circle"></i> 완료: <strong id="completed-count">0</strong></span>
-          <span><i data-lucide="circle"></i> 남음: <strong id="remaining-count">77</strong></span>
+          <span><i data-lucide="circle"></i> 남음: <strong id="remaining-count">62</strong></span>
         </div>
       </div>
 
@@ -1153,11 +1153,11 @@
       },
       {
         id: 2,
-        title: "AI 이미지 & 영상 생성 파이프라인",
-        subtitle: "Nano Banana → Kling AI → Veo 3 → Minimax Hailuo",
+        title: "AI 콘텐츠 제작 & 자동화 파이프라인",
+        subtitle: "이미지/영상 생성 → 쇼츠 자동화 → 멀티 플랫폼 배포",
         difficulty: 2,
-        duration: "약 5시간",
-        icon: "🎬",
+        duration: "약 11시간",
+        icon: "🎬⚡",
         color: "#8B5CF6",
         chapters: [
           {
@@ -1184,20 +1184,9 @@
               { id: "2-3-3", type: "practice", title: "[실습] Minimax Hailuo로 후처리" },
               { id: "2-3-4", type: "project", title: "[프로젝트] 나만의 바이럴 광고 영상 제작" }
             ]
-          }
-        ]
-      },
-      {
-        id: 3,
-        title: "n8n 자동화 워크플로우",
-        subtitle: "쇼츠 자동 생성 + 멀티 플랫폼 포스팅",
-        difficulty: 2,
-        duration: "약 6시간",
-        icon: "⚡",
-        color: "#F59E0B",
-        chapters: [
+          },
           {
-            title: "Ch 01. n8n 기초 다지기",
+            title: "Ch 04. n8n 기초 다지기",
             lessons: [
               { id: "3-1-1", type: "concept", title: "n8n이란? 노코드 자동화 이해" },
               { id: "3-1-2", type: "practice", title: "[실습] n8n 설치 및 기본 설정" },
@@ -1205,7 +1194,7 @@
             ]
           },
           {
-            title: "Ch 02. 쇼츠 자동 생성 파이프라인",
+            title: "Ch 05. 쇼츠 자동 생성 파이프라인",
             lessons: [
               { id: "3-2-1", type: "concept", title: "영상 자동 생성 워크플로우 설계" },
               { id: "3-2-2", type: "practice", title: "[실습] AI로 스크립트 생성하기" },
@@ -1214,7 +1203,7 @@
             ]
           },
           {
-            title: "Ch 03. 멀티 플랫폼 자동 포스팅",
+            title: "Ch 06. 멀티 플랫폼 자동 포스팅",
             lessons: [
               { id: "3-3-1", type: "concept", title: "소셜미디어 API 이해 (Meta, TikTok, YouTube, LinkedIn, X)" },
               { id: "3-3-2", type: "practice", title: "[실습] Blotato/upload-post 연동" },
@@ -1225,35 +1214,7 @@
         ]
       },
       {
-        id: 4,
-        title: "Wan Move 모션 그래픽",
-        subtitle: "캐릭터 애니메이션 & 캐릭터 교체",
-        difficulty: 3,
-        duration: "약 4시간",
-        icon: "💃",
-        color: "#EC4899",
-        chapters: [
-          {
-            title: "Ch 01. Wan 2.2 모델 이해",
-            lessons: [
-              { id: "4-1-1", type: "concept", title: "Wan-Move / Wan-Animate 소개" },
-              { id: "4-1-2", type: "concept", title: "Animation Mode vs Replacement Mode" },
-              { id: "4-1-3", type: "practice", title: "[실습] 환경 구축 및 모델 다운로드" }
-            ]
-          },
-          {
-            title: "Ch 02. 캐릭터 애니메이션 실전",
-            lessons: [
-              { id: "4-2-1", type: "practice", title: "[실습] 캐릭터 이미지 + 참조 영상 준비" },
-              { id: "4-2-2", type: "practice", title: "[실습] Animation Mode로 모션 전이" },
-              { id: "4-2-3", type: "practice", title: "[실습] Replacement Mode로 캐릭터 교체" },
-              { id: "4-2-4", type: "project", title: "[프로젝트] 일관된 캐릭터 영상 시리즈 제작" }
-            ]
-          }
-        ]
-      },
-      {
-        id: 5,
+        id: 3,
         title: "LangExtract 정보 추출",
         subtitle: "비정형 텍스트 → 구조화 데이터",
         difficulty: 3,
@@ -1281,12 +1242,12 @@
         ]
       },
       {
-        id: 6,
-        title: "AI Agent 실전 활용",
-        subtitle: "500-AI-Agents-Projects & 카카오 PlayMCP",
-        difficulty: 3,
-        duration: "약 6시간",
-        icon: "🤖",
+        id: 4,
+        title: "AI Agent & 트레이딩 자동화",
+        subtitle: "PlayMCP + TradingView + AI 전략",
+        difficulty: 4,
+        duration: "약 11시간",
+        icon: "🤖📈",
         color: "#6366F1",
         chapters: [
           {
@@ -1314,20 +1275,9 @@
               { id: "6-3-2", type: "practice", title: "[실습] 금융 분석 Agent 구현" },
               { id: "6-3-3", type: "project", title: "[프로젝트] 도메인 특화 Agent 설계" }
             ]
-          }
-        ]
-      },
-      {
-        id: 7,
-        title: "AI 트레이딩 자동화",
-        subtitle: "TradingView, Pine Script, AI 전략",
-        difficulty: 4,
-        duration: "약 5시간",
-        icon: "📈",
-        color: "#EF4444",
-        chapters: [
+          },
           {
-            title: "Ch 01. AI 트레이딩 기초",
+            title: "Ch 04. AI 트레이딩 기초",
             lessons: [
               { id: "7-1-1", type: "concept", title: "퀀트 트레이딩과 AI의 만남" },
               { id: "7-1-2", type: "concept", title: "TradingView와 Pine Script 소개" },
@@ -1335,7 +1285,7 @@
             ]
           },
           {
-            title: "Ch 02. AI 기반 전략 수립",
+            title: "Ch 05. AI 기반 전략 수립",
             lessons: [
               { id: "7-2-1", type: "practice", title: "[실습] AI로 매매 전략 아이디어 생성" },
               { id: "7-2-2", type: "practice", title: "[실습] Pine Script로 전략 코드화" },
@@ -1346,41 +1296,7 @@
         ]
       },
       {
-        id: 8,
-        title: "Computer Vision 실전 프로젝트",
-        subtitle: "YOLO, Crowd Density, Dashboard",
-        difficulty: 4,
-        duration: "약 7시간",
-        icon: "👁️",
-        color: "#14B8A6",
-        chapters: [
-          {
-            title: "Ch 01. Object Detection 기초",
-            lessons: [
-              { id: "8-1-1", type: "concept", title: "YOLO 모델 이해하기" },
-              { id: "8-1-2", type: "concept", title: "Bounding Box vs Segmentation" },
-              { id: "8-1-3", type: "practice", title: "[실습] YOLO 환경 구축" }
-            ]
-          },
-          {
-            title: "Ch 02. Crowd Density 분석 시스템 구축",
-            lessons: [
-              { id: "8-2-1", type: "practice", title: "[실습] 영상에서 객체 탐지하기" },
-              { id: "8-2-2", type: "practice", title: "[실습] 탐지 결과 데이터 추출" },
-              { id: "8-2-3", type: "project", title: "[프로젝트] 실시간 대시보드 구현" }
-            ]
-          },
-          {
-            title: "Ch 03. 확장 가능성 탐색",
-            lessons: [
-              { id: "8-3-1", type: "concept", title: "Target 변경으로 다양한 응용 (차량, 제품 등)" },
-              { id: "8-3-2", type: "project", title: "[프로젝트] 커스텀 Detection 시스템 설계" }
-            ]
-          }
-        ]
-      },
-      {
-        id: 9,
+        id: 5,
         title: "Palantir Foundry 기초",
         subtitle: "엔터프라이즈 데이터 플랫폼",
         difficulty: 5,
@@ -1414,6 +1330,7 @@
         ]
       }
     ];
+
 
     // Detailed Guides Data
     const detailedGuides = {
@@ -1523,13 +1440,19 @@
         objectives: [
           "First/Last Frame 기반 영상 생성 워크플로우 이해",
           "Nano Banana → Kling AI → Veo 3 → Hailuo 파이프라인 구축",
-          "바이럴 광고 영상 직접 제작"
+          "n8n으로 쇼츠 자동 생성 및 편집 파이프라인 설계",
+          "7개 소셜 플랫폼 동시 포스팅 자동화",
+          "콘텐츠 제작부터 배포까지 End-to-End 자동화 경험"
         ],
         prerequisites: [
           { item: "Nano Banana", desc: "이미지 생성 (Gemini 기반)", link: "https://nanobanana.io" },
           { item: "Kling AI", desc: "영상 생성", link: "https://klingai.com" },
           { item: "Google AI Studio", desc: "Veo 3 접근", link: "https://aistudio.google.com" },
-          { item: "Minimax Hailuo", desc: "영상 후처리", link: "https://hailuoai.video" }
+          { item: "Minimax Hailuo", desc: "영상 후처리", link: "https://hailuoai.video" },
+          { item: "n8n", desc: "자동화 플랫폼 (Cloud 또는 Self-hosted)", link: "https://n8n.io" },
+          { item: "OpenAI API", desc: "스크립트/캡션 생성", link: "https://platform.openai.com" },
+          { item: "Google Sheets", desc: "콘텐츠 관리", link: "https://sheets.google.com" },
+          { item: "Blotato (선택)", desc: "멀티 플랫폼 포스팅", link: "https://blotato.com" }
         ],
         steps: [
           {
@@ -1556,7 +1479,7 @@
             ]
           },
           {
-            chapter: "Ch 02. Nano Banana로 프레임 생성",
+            chapter: "Ch 02. Nano Banana로 시작/끝 프레임 생성",
             content: [
               {
                 title: "Step 1: 첫 번째 프레임 생성",
@@ -1614,53 +1537,9 @@
 5. 최종 Export`
               }
             ]
-          }
-        ],
-        project: {
-          title: "바이럴 광고 영상 제작",
-          goal: "제품/브랜드 바이럴 영상 1편 완성",
-          scenario: `시나리오 예시 (운동화 광고):
-Scene 1: 평범한 운동화 클로즈업
-Scene 2: 불꽃 이펙트 시작
-Scene 3: 로고가 불꽃으로 형성
-Scene 4: 브랜드 텍스트 페이드인`,
-          checklist: [
-            "스토리보드 작성 (4컷)",
-            "Nano Banana로 각 씬 키프레임 생성",
-            "Kling AI로 씬 간 트랜지션 생성",
-            "Veo 3로 메인 씬 고품질 생성",
-            "Hailuo로 색보정 및 스타일링",
-            "영상 편집툴에서 조합 (CapCut 등)",
-            "BGM 추가 후 Export"
-          ]
-        },
-        resources: [
-          { name: "Nano Banana", url: "https://nanobanana.io" },
-          { name: "Kling AI", url: "https://klingai.com" },
-          { name: "Veo 3.1 Docs", url: "https://ai.google.dev/docs/veo" },
-          { name: "Minimax Hailuo", url: "https://hailuoai.video" }
-        ],
-        tips: [
-          "First/Last Frame의 구도와 색감을 최대한 비슷하게 유지해야 자연스러운 보간 가능",
-          "프롬프트에 카메라 움직임을 명시하면 더 시네마틱한 결과물",
-          "여러 모델로 같은 프롬프트 테스트 후 가장 좋은 결과 선택"
-        ]
-      },
-      3: {
-        objectives: [
-          "n8n 노코드 자동화 플랫폼 마스터",
-          "AI 기반 쇼츠 자동 생성 시스템 구축",
-          "7개 소셜 플랫폼 동시 포스팅 자동화"
-        ],
-        prerequisites: [
-          { item: "n8n", desc: "자동화 플랫폼 (Cloud 또는 Self-hosted)", link: "https://n8n.io" },
-          { item: "OpenAI API", desc: "GPT 활용", link: "https://platform.openai.com" },
-          { item: "Google Sheets", desc: "콘텐츠 관리", link: "https://sheets.google.com" },
-          { item: "Blotato (선택)", desc: "멀티 플랫폼 포스팅", link: "https://blotato.com" }
-        ],
-        steps: [
+          },
           {
-            chapter: "Ch 01. n8n 기초 다지기",
+            chapter: "Ch 04. n8n 기초 다지기",
             content: [
               {
                 title: "Step 1: n8n 설치 (Self-hosted)",
@@ -1696,7 +1575,7 @@ http://localhost:5678`
             ]
           },
           {
-            chapter: "Ch 02. 쇼츠 자동 생성 파이프라인",
+            chapter: "Ch 05. 쇼츠 자동 생성 파이프라인",
             content: [
               {
                 title: "워크플로우 구조",
@@ -1725,7 +1604,7 @@ http://localhost:5678`
             ]
           },
           {
-            chapter: "Ch 03. 멀티 플랫폼 자동 포스팅",
+            chapter: "Ch 06. 멀티 플랫폼 자동 포스팅",
             content: [
               {
                 title: "지원 플랫폼",
@@ -1757,129 +1636,49 @@ Facebook  | LinkedIn | X (Twitter) | Threads`
           }
         ],
         project: {
-          title: "7개 플랫폼 동시 포스팅 시스템",
-          goal: "콘텐츠 1개 → 7개 플랫폼 자동 배포",
+          title: "콘텐츠 제작 → 자동 배포 파이프라인",
+          goal: "바이럴 영상 1편 제작 후 7개 플랫폼 자동 배포",
+          scenario: `시나리오 예시 (운동화 광고):
+Scene 1: 평범한 운동화 클로즈업
+Scene 2: 불꽃 이펙트 시작
+Scene 3: 로고가 불꽃으로 형성
+Scene 4: 브랜드 텍스트 페이드인
+
+배포 플로우:
+- 편집 완료 → 자동 업로드 → 예약 발행`,
           checklist: [
+            "스토리보드 작성 (4컷)",
+            "Nano Banana로 각 씬 키프레임 생성",
+            "Kling AI로 씬 간 트랜지션 생성",
+            "Veo 3로 메인 씬 고품질 생성",
+            "Hailuo로 색보정 및 스타일링",
+            "영상 편집툴에서 조합 (CapCut 등)",
             "Google Sheets 콘텐츠 DB 설계",
             "플랫폼별 캡션 자동 변환 (해시태그 등)",
             "최적 포스팅 시간 스케줄링",
-            "에러 발생 시 Slack/Telegram 알림",
-            "포스팅 결과 로그 자동 기록",
-            "주간 리포트 자동 생성"
+            "Blotato 업로드 & 자동 포스팅",
+            "포스팅 결과 로그 및 주간 리포트 생성"
           ]
         },
         resources: [
+          { name: "Nano Banana", url: "https://nanobanana.io" },
+          { name: "Kling AI", url: "https://klingai.com" },
+          { name: "Veo 3.1 Docs", url: "https://ai.google.dev/docs/veo" },
+          { name: "Minimax Hailuo", url: "https://hailuoai.video" },
           { name: "n8n 공식 문서", url: "https://docs.n8n.io" },
           { name: "n8n 워크플로우 템플릿", url: "https://n8n.io/workflows" },
           { name: "Blotato API", url: "https://docs.blotato.com" }
         ],
         tips: [
+          "First/Last Frame의 구도와 색감을 최대한 비슷하게 유지해야 자연스러운 보간 가능",
+          "프롬프트에 카메라 움직임을 명시하면 더 시네마틱한 결과물",
+          "여러 모델로 같은 프롬프트 테스트 후 가장 좋은 결과 선택",
           "워크플로우 테스트 시 'Execute Workflow' 버튼으로 수동 실행 먼저 확인",
           "에러 핸들링 노드를 추가해 실패 시 알림 받기",
           "Rate Limit 주의: 플랫폼별 API 호출 제한 확인 필수"
         ]
       },
-      4: {
-        objectives: [
-          "Wan 2.2 모델의 Animation/Replacement 모드 이해",
-          "캐릭터 이미지 + 참조 영상으로 모션 전이 수행",
-          "일관된 캐릭터 영상 시리즈 제작"
-        ],
-        prerequisites: [
-          { item: "Python 3.10+", desc: "실행 환경", link: "https://python.org" },
-          { item: "CUDA GPU", desc: "RTX 3090 이상 권장", link: "" },
-          { item: "Hugging Face 계정", desc: "모델 다운로드", link: "https://huggingface.co" },
-          { item: "ComfyUI (선택)", desc: "GUI 환경", link: "https://github.com/comfyanonymous/ComfyUI" }
-        ],
-        steps: [
-          {
-            chapter: "Ch 01. Wan 2.2 모델 이해",
-            content: [
-              {
-                title: "Animation vs Replacement 모드",
-                details: `🎭 Animation Mode:
-- 캐릭터 이미지가 참조 영상의 동작을 따라함
-- 입력: 캐릭터 이미지 + 참조 동작 영상
-- 출력: 캐릭터가 움직이는 새 영상
-
-🔄 Replacement Mode:
-- 참조 영상의 캐릭터를 다른 캐릭터로 교체
-- 입력: 새 캐릭터 이미지 + 원본 영상
-- 출력: 캐릭터만 바뀐 영상 (배경, 조명 유지)`
-              },
-              {
-                title: "Step 1: 환경 구축",
-                details: `# 저장소 클론
-git clone https://github.com/Wan-Video/Wan2.2
-cd Wan2.2
-
-# 의존성 설치
-pip install -r requirements.txt
-pip install flash_attn
-
-# 모델 다운로드 (HuggingFace)
-huggingface-cli download Wan-AI/Wan2.2-Animate-14B \\
-  --local-dir ./Wan2.2-Animate-14B`
-              }
-            ]
-          },
-          {
-            chapter: "Ch 02. 캐릭터 애니메이션 실전",
-            content: [
-              {
-                title: "Step 1: 입력 자료 준비",
-                details: `캐릭터 이미지 요구사항:
-- 해상도: 720p 이상
-- 포맷: PNG/JPEG
-- 전신 또는 상반신
-- 깨끗한 배경 권장
-
-참조 영상 요구사항:
-- 해상도: 720p
-- 길이: 5-10초 권장
-- 단일 인물
-- 명확한 동작`
-              },
-              {
-                title: "Step 2: Animation 모드 실행",
-                details: `# 애니메이션 생성
-python generate_animate.py \\
-  --task animate \\
-  --ckpt_dir ./Wan2.2-Animate-14B \\
-  --input_dir ./examples/process_results \\
-  --output_dir ./outputs \\
-  --offload_model True
-
-# 결과 확인
-outputs/animated_result.mp4`
-              }
-            ]
-          }
-        ],
-        project: {
-          title: "일관된 캐릭터 영상 시리즈 제작",
-          goal: "동일 캐릭터로 3개 이상의 연속 영상 제작",
-          checklist: [
-            "캐릭터 레퍼런스 이미지 1장 확정",
-            "다양한 동작의 참조 영상 3개 수집",
-            "Animation 모드로 3개 영상 생성",
-            "캐릭터 일관성 검토 및 보정",
-            "영상 편집으로 시리즈 완성",
-            "썸네일 제작"
-          ]
-        },
-        resources: [
-          { name: "Wan2.2 GitHub", url: "https://github.com/Wan-Video/Wan2.2" },
-          { name: "Wan2.2-Animate HuggingFace", url: "https://huggingface.co/Wan-AI/Wan2.2-Animate-14B" },
-          { name: "ComfyUI WanWrapper", url: "https://github.com/kijai/ComfyUI-WanVideoWrapper" }
-        ],
-        tips: [
-          "RTX 4090 24GB에서 14B 모델 실행 시 --offload_model True 필수",
-          "캐릭터 이미지와 참조 영상의 포즈가 비슷할수록 자연스러운 결과",
-          "ComfyUI WanWrapper 사용하면 GUI로 더 쉽게 작업 가능"
-        ]
-      },
-      5: {
+      3: {
         objectives: [
           "LangExtract 라이브러리로 비정형 텍스트 구조화",
           "Few-shot Learning 기반 추출 원리 이해",
@@ -1972,16 +1771,20 @@ result = lx.extract(
           "Ollama + Gemma로 로컬 실행도 가능 (무료)"
         ]
       },
-      6: {
+      4: {
         objectives: [
           "AI Agent의 개념과 최신 동향 파악",
-          "500-AI-Agents-Projects에서 Use Case 학습",
-          "카카오 PlayMCP로 실제 Agent 구현 및 등록"
+          "PlayMCP로 MCP 서버 구현 및 등록",
+          "도메인 특화 Agent 설계 경험",
+          "퀀트 트레이딩과 AI 결합 개념 이해",
+          "AI로 매매 전략을 설계하고 백테스팅"
         ],
         prerequisites: [
           { item: "카카오 계정", desc: "PlayMCP 접속용", link: "https://accounts.kakao.com" },
           { item: "Python 3.10+", desc: "Agent 개발 환경", link: "https://python.org" },
-          { item: "GitHub 계정", desc: "프로젝트 참고용", link: "https://github.com" }
+          { item: "GitHub 계정", desc: "프로젝트 참고용", link: "https://github.com" },
+          { item: "TradingView 계정", desc: "차트 및 Pine Script", link: "https://tradingview.com" },
+          { item: "OpenAI API", desc: "전략 아이디어 생성", link: "https://platform.openai.com" }
         ],
         steps: [
           {
@@ -2049,46 +1852,35 @@ if __name__ == "__main__":
     mcp.run()`
               }
             ]
-          }
-        ],
-        project: {
-          title: "도메인 특화 Agent 설계",
-          goal: "특정 분야에 특화된 MCP 서버 개발 및 PlayMCP 등록",
-          checklist: [
-            "Agent 도메인 선정 (날씨, 번역, 뉴스 등)",
-            "필요한 외부 API 조사",
-            "MCP 서버 구현 (최소 3개 도구)",
-            "로컬 테스트 완료",
-            "클라우드 배포",
-            "PlayMCP 등록 및 공개"
-          ]
-        },
-        resources: [
-          { name: "500-AI-Agents-Projects", url: "https://github.com/ashishpatel26/500-AI-Agents-Projects" },
-          { name: "카카오 PlayMCP", url: "https://playmcp.kakao.com" },
-          { name: "MCP 프로토콜 가이드 (WikiDocs)", url: "https://wikidocs.net/294002" },
-          { name: "FastMCP 문서", url: "https://github.com/jlowin/fastmcp" }
-        ],
-        tips: [
-          "PlayMCP 공모전 'MCP Player 10'에 참여하면 상금 기회!",
-          "카카오 서비스 MCP (나챗방, 카카오맵)와 조합하면 시너지 ↑",
-          "500-AI-Agents 프로젝트 중 관심 있는 것을 Fork해서 시작하면 빠름"
-        ]
-      },
-      7: {
-        objectives: [
-          "퀀트 트레이딩과 AI 결합 개념 이해",
-          "TradingView와 Pine Script 기초 학습",
-          "AI로 매매 전략 아이디어 생성 및 백테스팅"
-        ],
-        prerequisites: [
-          { item: "TradingView 계정", desc: "차트 및 Pine Script", link: "https://tradingview.com" },
-          { item: "OpenAI API", desc: "전략 아이디어 생성", link: "https://platform.openai.com" },
-          { item: "Python (선택)", desc: "고급 백테스팅", link: "https://python.org" }
-        ],
-        steps: [
+          },
           {
-            chapter: "Ch 01. AI 트레이딩 기초",
+            chapter: "Ch 03. Agent 프로젝트 실전",
+            content: [
+              {
+                title: "Step 1: 도메인 선정과 요구사항 정의",
+                details: `예시 도메인:
+• 레시피 추천
+• 금융 분석
+• 일정 관리
+
+요구사항 정의 예:
+- 입력: 사용자 질문 + 컨텍스트
+- 처리: 외부 API 호출 + 요약
+- 출력: 액션 가능한 답변`
+              },
+              {
+                title: "Step 2: MCP 도구 설계",
+                details: `최소 3개 도구 설계 권장:
+• search_xxx(): 외부 데이터 조회
+• analyze_xxx(): 요약/분석
+• notify_xxx(): 결과 전달 (Slack/Email 등)
+
+도구별 입력/출력 스키마를 명확히 정의`
+              }
+            ]
+          },
+          {
+            chapter: "Ch 04. AI 트레이딩 기초",
             content: [
               {
                 title: "퀀트 트레이딩이란?",
@@ -2106,7 +1898,7 @@ AI 결합 영역:
             ]
           },
           {
-            chapter: "Ch 02. AI 기반 전략 수립",
+            chapter: "Ch 05. AI 기반 전략 수립",
             content: [
               {
                 title: "Step 1: AI로 전략 아이디어 생성",
@@ -2149,138 +1941,37 @@ if (exitCondition)
           }
         ],
         project: {
-          title: "나만의 자동 매매 전략 구축",
-          goal: "AI로 설계한 전략을 Pine Script로 구현하고 백테스팅",
+          title: "Agent 기반 AI 트레이딩 전략 구축",
+          goal: "도메인 특화 Agent를 설계하고 트레이딩 전략을 자동화하여 백테스팅",
           checklist: [
-            "AI로 3개 이상 전략 아이디어 생성",
-            "가장 유망한 전략 1개 선정",
-            "Pine Script로 코드 구현",
+            "Agent 도메인 선정 (금융 리서치, 뉴스 요약 등)",
+            "필요한 외부 API 조사",
+            "MCP 서버 구현 (최소 3개 도구)",
+            "로컬 테스트 완료",
+            "TradingView용 전략 아이디어 3개 이상 생성",
+            "Pine Script로 전략 구현",
             "최소 1년 데이터로 백테스팅",
-            "파라미터 최적화 수행",
             "결과 리포트 작성 (승률, 수익률, MDD)"
           ]
         },
         resources: [
+          { name: "500-AI-Agents-Projects", url: "https://github.com/ashishpatel26/500-AI-Agents-Projects" },
+          { name: "카카오 PlayMCP", url: "https://playmcp.kakao.com" },
+          { name: "MCP 프로토콜 가이드 (WikiDocs)", url: "https://wikidocs.net/294002" },
+          { name: "FastMCP 문서", url: "https://github.com/jlowin/fastmcp" },
           { name: "TradingView Pine Script 문서", url: "https://www.tradingview.com/pine-script-docs/" },
           { name: "Pine Script 튜토리얼", url: "https://www.tradingview.com/pine-script-docs/primer" }
         ],
         tips: [
+          "PlayMCP 공모전 'MCP Player 10'에 참여하면 상금 기회!",
+          "카카오 서비스 MCP (나챗방, 카카오맵)와 조합하면 시너지 ↑",
+          "500-AI-Agents 프로젝트 중 관심 있는 것을 Fork해서 시작하면 빠름",
           "과최적화(Overfitting) 주의: 과거 데이터에만 맞춘 전략은 실전에서 실패",
           "다양한 시장 상황(상승장, 하락장, 횡보장)에서 테스트 필수",
           "실제 투자 전 Paper Trading으로 충분히 검증할 것"
         ]
       },
-      8: {
-        objectives: [
-          "YOLO 기반 Object Detection 이해 및 구현",
-          "Crowd Density 분석 시스템 구축",
-          "실시간 대시보드로 시각화"
-        ],
-        prerequisites: [
-          { item: "Python 3.10+", desc: "개발 환경", link: "https://python.org" },
-          { item: "CUDA GPU", desc: "RTX 3060 이상 권장", link: "" },
-          { item: "VS Code", desc: "코드 에디터", link: "https://code.visualstudio.com" }
-        ],
-        steps: [
-          {
-            chapter: "Ch 01. Object Detection 기초",
-            content: [
-              {
-                title: "YOLO란?",
-                details: `YOLO = You Only Look Once
-
-특징:
-• 실시간 객체 탐지 (30+ FPS)
-• Single-stage Detector
-• 높은 정확도와 빠른 속도 균형
-
-버전별 특징:
-• YOLOv8: Ultralytics, 사용 편의성 최고
-• YOLOv9: 더 높은 정확도
-• YOLO11: 최신 버전`
-              },
-              {
-                title: "Step 1: 환경 구축",
-                details: `# 가상환경 생성
-python -m venv cv-env
-source cv-env/bin/activate
-
-# 패키지 설치
-pip install ultralytics opencv-python
-pip install streamlit plotly pandas
-
-# YOLO 모델 테스트
-from ultralytics import YOLO
-model = YOLO('yolov8n.pt')
-results = model('test.jpg')
-results[0].show()`
-              }
-            ]
-          },
-          {
-            chapter: "Ch 02. Crowd Density 분석 시스템",
-            content: [
-              {
-                title: "Step 1: 영상에서 사람 탐지",
-                details: `from ultralytics import YOLO
-import cv2
-
-model = YOLO('yolov8n.pt')
-cap = cv2.VideoCapture('crowd_video.mp4')
-
-while cap.isOpened():
-    ret, frame = cap.read()
-    if not ret:
-        break
-    
-    # 탐지 실행 (class 0 = person)
-    results = model(frame, classes=[0])
-    person_count = len(results[0].boxes)
-    print(f"탐지된 사람 수: {person_count}")`
-              },
-              {
-                title: "Step 2: Streamlit 대시보드",
-                details: `# dashboard.py
-import streamlit as st
-import plotly.express as px
-
-st.title("🎯 Crowd Density Dashboard")
-
-# 메트릭 카드
-col1, col2, col3 = st.columns(3)
-col1.metric("현재 인원", "125")
-col2.metric("평균 밀집도", "0.73")
-col3.metric("최대 인원", "189")
-
-# 실행: streamlit run dashboard.py`
-              }
-            ]
-          }
-        ],
-        project: {
-          title: "커스텀 Detection 시스템 설계",
-          goal: "특정 도메인에 맞는 객체 탐지 + 대시보드 시스템",
-          checklist: [
-            "탐지 대상 선정 (사람, 차량, 제품 등)",
-            "테스트 영상/이미지 수집",
-            "YOLO 모델로 탐지 파이프라인 구현",
-            "탐지 결과 데이터 저장 (CSV/DB)",
-            "Streamlit 대시보드 구현",
-            "실시간 알림 기능 추가 (임계치 초과 시)"
-          ]
-        },
-        resources: [
-          { name: "Ultralytics YOLO 문서", url: "https://docs.ultralytics.com" },
-          { name: "Streamlit 공식 문서", url: "https://docs.streamlit.io" },
-          { name: "OpenCV 튜토리얼", url: "https://docs.opencv.org/4.x/d9/df8/tutorial_root.html" }
-        ],
-        tips: [
-          "실시간 처리가 필요하면 YOLOv8n (nano) 모델 사용 권장",
-          "GPU 없으면 model(frame, device='cpu')로 CPU 실행 가능 (느림)",
-          "Streamlit은 st.rerun()으로 자동 새로고침 구현 가능"
-        ]
-      },
-      9: {
+      5: {
         objectives: [
           "Palantir Foundry 플랫폼 개념 이해",
           "Ontology 기반 데이터 모델링 학습",
@@ -2366,6 +2057,7 @@ Ontology 방식:
         ]
       }
     };
+
 
     // State
     let completedLessons = JSON.parse(localStorage.getItem('completedLessons') || '{}');
@@ -2525,11 +2217,23 @@ Ontology 방식:
 
     // Update progress
     function updateProgress() {
-      const totalLessons = curriculumData.reduce((acc, part) => 
-        acc + part.chapters.reduce((a, ch) => a + ch.lessons.length, 0), 0);
-      const completedCount = Object.values(completedLessons).filter(Boolean).length;
-      const percent = Math.round((completedCount / totalLessons) * 100);
+      const allLessonIds = new Set();
+      curriculumData.forEach(part => {
+        part.chapters.forEach(ch => {
+          ch.lessons.forEach(lesson => allLessonIds.add(lesson.id));
+        });
+      });
 
+      const totalLessons = allLessonIds.size;
+      const completedCount = Object.entries(completedLessons)
+        .filter(([id, done]) => done && allLessonIds.has(id)).length;
+      const percent = totalLessons ? Math.round((completedCount / totalLessons) * 100) : 0;
+
+      const totalPartsEl = document.getElementById('total-parts');
+      if (totalPartsEl) {
+        totalPartsEl.textContent = curriculumData.length;
+      }
+      document.getElementById('total-lessons').textContent = totalLessons;
       document.getElementById('progress-percent').textContent = `${percent}%`;
       document.getElementById('progress-fill').style.width = `${percent}%`;
       document.getElementById('completed-count').textContent = completedCount;
